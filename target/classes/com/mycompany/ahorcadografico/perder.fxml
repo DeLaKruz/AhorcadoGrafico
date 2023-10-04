@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ahorcadografico.PerderController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="500.0" fitWidth="709.0" layoutX="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@cementerio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="texto" fitHeight="147.0" fitWidth="498.0" layoutX="101.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@perdiste.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="horca" fitHeight="404.0" fitWidth="408.0" layoutX="170.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@horca7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="volvermenu" fitHeight="61.0" fitWidth="235.0" layoutX="237.0" layoutY="411.0" onMouseClicked="#volvermenu" onMouseEntered="#enter" onMouseExited="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@volvermenu.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="erapalabra" fill="RED" layoutX="93.0" layoutY="370.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="LA PALABRA ERA " textAlignment="CENTER" wrappingWidth="514.7870483398438">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

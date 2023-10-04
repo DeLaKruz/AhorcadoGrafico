@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ahorcadografico.GanarController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="512.0" fitWidth="709.0" layoutX="-9.0" layoutY="-12.0" pickOnBounds="true">
+         <image>
+            <Image url="@fondoganar.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ganartexto" fitHeight="151.0" fitWidth="436.0" layoutX="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textoganar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="persona" fitHeight="371.0" fitWidth="373.0" layoutX="165.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@persona.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="volvermenu" fitHeight="68.0" fitWidth="265.0" layoutX="228.0" layoutY="403.0" onMouseClicked="#clickmenu" onMouseEntered="#enter" onMouseExited="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@volvermenu.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="erapalabra" fill="#01dd3c" layoutX="34.0" layoutY="336.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="LA PALABRA ERA " textAlignment="CENTER" wrappingWidth="622.8957214355469">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

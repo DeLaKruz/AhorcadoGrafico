@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ahorcadografico.AjustesController">
+   <children>
+      <VBox layoutX="210.0" layoutY="100.0" prefHeight="200.0" prefWidth="180.0" />
+      <ImageView fx:id="fondoajustes" fitHeight="533.0" fitWidth="715.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fondoajustes.png" />
+         </image></ImageView>
+      <ImageView fx:id="marco" fitHeight="465.0" fitWidth="671.0" layoutX="16.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@marco.png" />
+         </image></ImageView>
+      <Text layoutX="153.0" layoutY="161.0" stroke="#f4f3f3" strokeType="OUTSIDE" strokeWidth="2.0" text="Sonido" wrappingWidth="81.21917724609375">
+         <font>
+            <Font name="Lohit Gujarati" size="22.0" />
+         </font>
+      </Text>
+      <Slider fx:id="slidersonido" layoutX="256.0" layoutY="130.0" max="0.7" prefHeight="49.0" prefWidth="245.0" />
+      <Text layoutX="277.0" layoutY="50.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="AJUSTES" wrappingWidth="200.36590576171875">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <Text layoutX="154.0" layoutY="260.0" stroke="#f4f3f3" strokeType="OUTSIDE" strokeWidth="2.0" text="Dificultad" wrappingWidth="112.24945068359375">
+         <font>
+            <Font name="Lohit Gujarati" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="154.0" layoutY="207.0" stroke="#f4f3f3" strokeType="OUTSIDE" strokeWidth="2.0" text="SFX" wrappingWidth="81.21917724609375">
+         <font>
+            <Font name="Lohit Gujarati" size="22.0" />
+         </font>
+      </Text>
+      <Slider fx:id="slidersfx" layoutX="257.0" layoutY="176.0" max="1.0" prefHeight="49.0" prefWidth="245.0" />
+      <ImageView fx:id="defecto" fitHeight="49.0" fitWidth="180.0" layoutX="292.0" layoutY="286.0" onMouseClicked="#pulsarPorDefecto" onMouseEntered="#enter" onMouseExited="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pordefecto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="volver" fitHeight="55.0" fitWidth="176.0" layoutX="292.0" layoutY="347.0" onMouseClicked="#volverMenu" onMouseEntered="#enter" onMouseExited="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@volver.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="facil" layoutX="277.0" layoutY="243.0" mnemonicParsing="false" selected="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="dificultades" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="normal" layoutX="388.0" layoutY="243.0" mnemonicParsing="false" selected="true" toggleGroup="$dificultades" />
+      <RadioButton fx:id="dificil" layoutX="501.0" layoutY="242.0" mnemonicParsing="false" toggleGroup="$dificultades" />
+      <Text layoutX="300.0" layoutY="258.0" stroke="WHITE" strokeType="OUTSIDE" text="FÁCIL">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="410.0" layoutY="258.0" stroke="WHITE" strokeType="OUTSIDE" text="NORMAL">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="522.0" layoutY="257.0" stroke="WHITE" strokeType="OUTSIDE" text="DIFÍCIL">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
